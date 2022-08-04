@@ -1,0 +1,76 @@
+{
+    "Potion" : {
+        "icon" : "medicine_green.webp",
+        "rarity" : 1,
+        "capacity" : 10,
+        "value" : 7,
+        "description" : "Restores a small amount of Health.",
+        "combine_recipes" : [
+            ["Herb", "Blue Mushroom"]
+        ],
+        "shops" : [
+            ["Traveling Merchant", 66],
+            ["Gathering Hub Merchant", 66]
+        ]
+    },
+    "Mega Potion" : {
+        "icon" : "medicine_green.webp",
+        "rarity" : 2,
+        "capacity" : 10,
+        "value" : 83,
+        "description" : "Restores a moderate amount of Health.",
+        "combine_recipes" : [
+            ["Potion", "Honey"]
+        ]
+    },
+    "Nutrients" : {
+        "icon" : "medicine_light_blue.webp",
+        "rarity" : 2,
+        "capacity" : 5,
+        "value" : 76,
+        "description" : "",
+        "combine_recipes" : [
+            ["Blue Mushroom", "Godbug"]
+        ],
+        "shops" : [
+            ["Old Lady Merchant", 760]
+        ]
+    },
+    "Mega Nutrients" : {
+        "icon" : "medicine_light_blue.webp",
+        "rarity" : 3,
+        "capacity" : 5,
+        "value" : 460,
+        "description" : "",
+        "combine_recipes" : [
+            ["Nutrients", "Honey"]
+        ]
+    },
+    "Antidote" : {
+        "icon" : "medicine_blue.webp",
+        "rarity" : 1,
+        "capacity" : 10,
+        "value" : 6,
+        "description" : "",
+        "combine_recipes" : [
+            ["Antidote Herb", "Blue Mushroom"]
+        ],
+        "shops" : [
+            ["Old Lady Merchant", 60],
+            ["Gathering Hub Merchant", 60]
+        ]
+    },
+    "Catalyst" : {
+        "icon" : "sac_grey.webp",
+        "rarity" : 2,
+        "capacity" : 5,
+        "value" : 48,
+        "description" : "",
+        "combine_recipes" : [
+            ["Honey", "Bitterbug"]
+        ],
+        "shops" : [
+            ["Old Lady Merchant", 480]
+        ]
+    }
+}
