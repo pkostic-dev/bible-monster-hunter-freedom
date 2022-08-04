@@ -2,10 +2,10 @@ extends Node
 
 
 func _ready() -> void:
-	var ironSword = BlademasterWeapon.new("Iron Sword", Weapon.Style.GREAT_SWORD,
-	 Weapon.ElementStatus.NONE, 1, 288, 0, BlademasterWeapon.Sharpness.YELLOW)
-	var crossBowGun = GunnerWeapon.new("CrossBow Gun", Weapon.Style.LIGHT_BOWGUN,
-	Weapon.ElementStatus.NONE, 1, 96, 0, GunnerWeapon.Reload.NORMAL,
+	var ironSword = BlademasterWeapon.new(Item.Type.WEAPON, 1, 100, 675, "Iron Sword+", Weapon.Style.GREAT_SWORD,
+	 Weapon.ElementStatus.NONE, 336, 0, BlademasterWeapon.Sharpness.YELLOW)
+	var crossBowGun = GunnerWeapon.new(Item.Type.WEAPON, 1, 100, 450, "Crossbow Gun", Weapon.Style.LIGHT_BOWGUN,
+	Weapon.ElementStatus.NONE, 96, 0, GunnerWeapon.Reload.NORMAL,
 	GunnerWeapon.Recoil.MODERATE)
 	
 	print(ironSword.getStats())

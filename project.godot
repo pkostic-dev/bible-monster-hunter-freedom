@@ -14,19 +14,31 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://class/blademaster_weapon.gd"
 }, {
+"base": "Item",
+"class": "Consumable",
+"language": "GDScript",
+"path": "res://class/consumable.gd"
+}, {
 "base": "Weapon",
 "class": "GunnerWeapon",
 "language": "GDScript",
 "path": "res://class/gunner_weapon.gd"
 }, {
 "base": "Reference",
+"class": "Item",
+"language": "GDScript",
+"path": "res://class/item.gd"
+}, {
+"base": "Item",
 "class": "Weapon",
 "language": "GDScript",
 "path": "res://class/weapon.gd"
 } ]
 _global_script_class_icons={
 "BlademasterWeapon": "",
+"Consumable": "",
 "GunnerWeapon": "",
+"Item": "",
 "Weapon": ""
 }
 
