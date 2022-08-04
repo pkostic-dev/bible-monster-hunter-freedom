@@ -11,8 +11,8 @@ export(int) var rarity
 export(int) var attack
 export(int) var defense
 
-func _init(_weapon_name:String, _style:int, _attribute:int, _rarity:int,
-_attack:int, _defense:int) -> void:
+func _init(_weapon_name: String, _style: int, _attribute: int,
+		_rarity: int, _attack: int, _defense: int) -> void:
 	weapon_name = _weapon_name
 	style = _style
 	attribute = _attribute
