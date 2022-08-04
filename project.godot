@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Weapon",
+"class": "BlademasterWeapon",
+"language": "GDScript",
+"path": "res://class/blademaster_weapon.gd"
+}, {
+"base": "Weapon",
+"class": "GunnerWeapon",
+"language": "GDScript",
+"path": "res://class/gunner_weapon.gd"
+}, {
+"base": "Reference",
+"class": "Weapon",
+"language": "GDScript",
+"path": "res://class/weapon.gd"
+} ]
+_global_script_class_icons={
+"BlademasterWeapon": "",
+"GunnerWeapon": "",
+"Weapon": ""
+}
+
+[application]
+
+config/name="Monster Hunter Freedom Bible"
+run/main_scene="res://WeaponTest.tscn"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
