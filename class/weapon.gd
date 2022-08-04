@@ -12,8 +12,8 @@ export(int) var attack
 export(int) var defense
 
 func _init(_type: int, _rarity: int, _capacity: int, _value: int,
-_weapon_name: String, _style: int, _attribute: int, _attack: int,
-_defense: int).(_type, _rarity, _capacity, _value) -> void:
+_weapon_name: String, _style: int, _attribute: int = ElementStatus.NONE,
+_attack: int = 1, _defense: int = 0).(_type, _rarity, _capacity, _value) -> void:
 	weapon_name = _weapon_name
 	style = _style
 	attribute = _attribute
