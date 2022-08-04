@@ -10,7 +10,7 @@ export(int) var capacity
 export(int) var value # sell value in zenny
 # info
 
-func _init(_type: int, _rarity: int, _capacity: int, _value: int) -> void:
+func _init(_type: int, _rarity: int = 1, _capacity: int = 1, _value: int = 0) -> void:
 	type = _type
 	rarity = _rarity
 	capacity = _capacity
