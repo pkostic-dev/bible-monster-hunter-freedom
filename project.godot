@@ -45,7 +45,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Monster Hunter Freedom Bible"
-run/main_scene="res://WeaponTest.tscn"
+run/main_scene="res://Test.tscn"
 config/icon="res://icon.png"
 
 [physics]
