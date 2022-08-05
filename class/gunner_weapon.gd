@@ -9,10 +9,11 @@ export(Recoil) var recoil
 
 # For gunner weapons attack is min_attack and max_attack is always +60 attack (upgrades)
 
-func _init(_type: int, _rarity: int, _capacity: int, _value: int, _weapon_name: String,
+func _init(_name: String, _type: int, _icon: String, _description: String, _rarity: int,
+_capacity: int, _value: int, _weapon_name: String,
 _style: int, _attribute: int, _attack: int, _defense: int,
-_reload: int, _recoil: int).(_type, _rarity, _capacity, _value, _weapon_name,
-_style, _attribute, _attack, _defense) -> void:
+_reload: int, _recoil: int).(_name, _type, _icon, _description, _rarity, _capacity,
+_value, _style, _attribute, _attack, _defense) -> void:
 	reload = _reload
 	recoil = _recoil
 
