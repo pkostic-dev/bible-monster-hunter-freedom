@@ -5,10 +5,10 @@ enum Sharpness {YELLOW, GREEN, BLUE, WHITE}
 
 export(Sharpness) var sharpness
 
-func _init(_type: int, _rarity: int, _capacity: int, _value: int,
-_weapon_name: String, _style: int, _attribute: int, _attack: int,
-_defense: int, _sharpness: int).(_type, _rarity, _capacity, _value,
-_weapon_name, _style, _attribute, _attack, _defense) -> void:
+func _init(_name: String, _type: int, _icon: String, _description: String, _rarity: int, _capacity: int, _value: int,
+_style: int, _attribute: int, _attack: int,
+_defense: int, _sharpness: int).(_name, _type, _icon, _description, _rarity, _capacity, _value,
+_style, _attribute, _attack, _defense) -> void:
 	sharpness = _sharpness
 
 func getStats() -> String:
