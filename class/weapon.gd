@@ -5,16 +5,14 @@ enum Style {GREAT_SWORD, SWORD_AND_SHIELD, DUAL_BLADES, HAMMER, LANCE,
 LIGHT_BOWGUN, HEAVY_BOWGUN}
 enum ElementStatus {NONE, FIRE, WATER, THUNDER, DRAGON, PARALYSIS, POISON, SLEEP}
 
-export(String) var weapon_name
 export(Style) var style
 export(ElementStatus) var attribute
 export(int) var attack
 export(int) var defense
 
-func _init(_type: int, _rarity: int, _capacity: int, _value: int,
-_weapon_name: String, _style: int, _attribute: int = ElementStatus.NONE,
-_attack: int = 1, _defense: int = 0).(_type, _rarity, _capacity, _value) -> void:
-	weapon_name = _weapon_name
+func _init(_name: String, _type: int, _icon: String, _description: String, _rarity: int, _capacity: int, _value: int,
+_style: int, _attribute: int = ElementStatus.NONE,
+_attack: int = 1, _defense: int = 0).(_name, _type, _icon, _description, _rarity, _capacity, _value) -> void:
 	style = _style
 	attribute = _attribute
 	attack = _attack
@@ -29,7 +27,6 @@ func getStats() -> String:
 	stats.erase(stats.length() - 1, 1)
 	
 	stats += c
-	stats += "weapon_name" + e + weapon_name + c
 	stats += "style" + e + Style.keys()[style] + c
 	stats += "attribute" + e + ElementStatus.keys()[attribute] + c
 	stats += "attack" + e + str(attack) + c
