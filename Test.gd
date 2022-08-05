@@ -12,4 +12,10 @@ func _ready() -> void:
 #
 #	print(ironSword.getStats())
 #	print(crossBowGun.getStats())
+
+	var potion = Consumable.new("Potion")
+	potion.loadFromJSON("res://data/items.json")
+	print(potion.getStats())
+	
+	
 	pass
