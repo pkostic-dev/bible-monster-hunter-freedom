@@ -12,3 +12,4 @@ func _ready() -> void:
 #
 #	print(ironSword.getStats())
 #	print(crossBowGun.getStats())
+	pass
