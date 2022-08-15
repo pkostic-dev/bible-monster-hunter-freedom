@@ -27,9 +27,14 @@ _rarity: int = 1, _capacity: int = 1, _value: int = 0) -> void:
 	value = _value
 
 
-func loadFromJSON(path) -> void:
-	
-	pass
+func load_from_json(path) -> void:
+	var file = File.new()
+	if not file.file_exists(path, File.READ):
+		printerr("File doesn't exist at " + path)
+		return
+	file.open(path, File.READ)
+	var data = parse_json(file.get_as_text())
+	print(data)
 
 
 func getStats() -> String:
