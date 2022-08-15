@@ -1,0 +1,84 @@
+Item
+	type : int
+	name : string
+	icon string
+	description : string
+	rarity : int
+	capacity : int
+	value : int
+
+CombinableItem extends Item
+	success_rate : float
+	quantity : int
+	combine_recipes : Array[Array[String, String] (ingredient A, ingredient B)
+	shops : Array[Array[String, int]] (shop, price)
+	requires_alchemy : boolean
+
+CookableItem extends Item
+	cooking_method : int
+
+CarvableItem extends Item
+	monsters : Array[String, ...] (monster1, monster2 etc.)
+
+FoundItem extends Item (mining, fishing, bug catching, scavenging, supply box)
+	locations : Array[String, ...] (location1, location2 etc.)
+	quests (reward)
+
+TradeableItem extends Item
+	trades : Array[Array[String, Array[String, ...]]] (elder, items)
+
+Weapon extends Item
+	attack : int
+	defense : int
+
+BlademasterWeapon extends Weapon
+	sharpness : int or String ?
+	attribute : int
+	upgrades : Array[string]
+
+GunnerWeapon extends Weapon
+	reload : int
+	recoil : int
+
+Monster
+	name : String
+	icon : String
+	description : String
+	size : int
+	class : int
+	elements : int or Array
+	ailments : int or Array
+	weaknesses : Array[Array[int, int]] (element, effectiveness)
+	habitat : Array[string]
+	size : float
+	
+
+Quest
+	village or guild ?
+	stars : int
+	number : int
+	name : string
+	objective : string
+	location : string
+	reward : int
+	contract_fee : int
+	time_limit : int
+	environment : int (stable or unstable)
+	hr_points : int
+	requirement : String
+	objective : String
+	monsters : array[string]
+	requestor : String
+	description : String
+	cutscenes : array[string] (area)
+	boulders : array[array[string, string]] (area, (to) area)
+
+Location
+
+Options
+	nb_books_of_combos : int (each book adds +5% to success_rate)
+	armor_set : Array[String]
+		- Combine Success(MixSucRate) skill can change combine success rate
+		- Alchemy skill allows for alchemy combine recipes
+		- Sharpness skill can change the sharpness of a weapon
+
