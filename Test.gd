@@ -2,21 +2,31 @@ extends Node
 
 
 func _ready() -> void:
-	
-	
-#	var ironSword = BlademasterWeapon.new(Item.Type.WEAPON, 1, 100, 675, "Iron Sword+", Weapon.Style.GREAT_SWORD,
-#	 Weapon.ElementStatus.NONE, 336, 0, BlademasterWeapon.Sharpness.YELLOW)
-#	var crossBowGun = GunnerWeapon.new(Item.Type.WEAPON, 1, 100, 450, "Crossbow Gun", Weapon.Style.LIGHT_BOWGUN,
-#	Weapon.ElementStatus.NONE, 96, 0, GunnerWeapon.Reload.NORMAL,
-#	GunnerWeapon.Recoil.MODERATE)
-#
-#	print(ironSword.getStats())
-#	print(crossBowGun.getStats())
+	var combinable_items = load_from_json("res://data/combinable_items.json", CombinableItem)
+	print(combinable_items)
 
-#	var potion = Consumable.new("Potion")
-#	potion.loadFromJSON("res://data/items.json")
-#	print(potion.getStats())
+func load_from_json(path, object_type) -> Array:
+	var file = File.new()
+	if not file.file_exists(path):
+		printerr("File doesn't exist at " + path)
+		return []
+	file.open(path, File.READ)
+	var data = parse_json(file.get_as_text())
+	if data.empty():
+		printerr("File is empty")
+		return []
 	
-	var testItem = Item.new("", 0)
+	var type = data.keys()[0]
+	var items = data.get(type)
 	
-	pass
+	var items_list = []
+	
+	for item in items:
+		var item_dict = data.get(type).get(item)
+		var _type = Item.Type.get(type.to_upper())
+		var _name = item
+		var _icon = item_dict.get("icon")
+		var object = object_type.new(_name, _type, _icon)
+		items_list.append(object)
+		
+	return items_list
