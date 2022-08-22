@@ -1,5 +1,5 @@
 {
-    "Consumables" : {
+    "Consumable" : {
         "Potion" : {
             "icon" : "medicine_green.webp",
             "rarity" : 1,
