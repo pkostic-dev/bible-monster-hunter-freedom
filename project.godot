@@ -15,9 +15,9 @@ _global_script_classes=[ {
 "path": "res://class/blademaster_weapon.gd"
 }, {
 "base": "Item",
-"class": "Consumable",
+"class": "CombinableItem",
 "language": "GDScript",
-"path": "res://class/consumable.gd"
+"path": "res://class/combinable_item.gd"
 }, {
 "base": "Weapon",
 "class": "GunnerWeapon",
@@ -36,7 +36,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "BlademasterWeapon": "",
-"Consumable": "",
+"CombinableItem": "",
 "GunnerWeapon": "",
 "Item": "",
 "Weapon": ""
