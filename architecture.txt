@@ -1,15 +1,17 @@
 Item
 	type : int
 	name : string
-	icon string
+	icon : string
 	description : string
 	rarity : int
 	capacity : int
 	value : int
 
 CombinableItem extends Item
+(also Buyable)
 	success_rate : float
-	quantity : int
+	min_quantity : int
+	max_quantity : int
 	combine_recipes : Array[Array[String, String] (ingredient A, ingredient B)
 	shops : Array[Array[String, int]] (shop, price)
 	requires_alchemy : boolean
