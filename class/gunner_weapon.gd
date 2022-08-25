@@ -17,11 +17,11 @@ _value, _style, _attribute, _attack, _defense) -> void:
 	reload = _reload
 	recoil = _recoil
 
-func getStats() -> String:
+func get_stats() -> String:
 	var c = ", "
 	var e = " = "
 	
-	var stats = .getStats()
+	var stats = .get_stats()
 	
 	stats.erase(stats.length() - 1, 1)
 	

@@ -24,7 +24,7 @@ func _init(_name: String, _type: int, _icon: String = "", _description: String =
 	value = _value
 
 
-func getStats() -> String:
+func get_stats() -> String:
 	var c = ", "
 	var e = " = "
 	

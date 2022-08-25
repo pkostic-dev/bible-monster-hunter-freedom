@@ -11,11 +11,11 @@ _defense: int, _sharpness: int).(_name, _type, _icon, _description, _rarity, _ca
 _style, _attribute, _attack, _defense) -> void:
 	sharpness = _sharpness
 
-func getStats() -> String:
+func get_stats() -> String:
 	var c = ", "
 	var e = " = "
 	
-	var stats = .getStats()
+	var stats = .get_stats()
 	
 	stats.erase(stats.length() - 1, 1)
 	

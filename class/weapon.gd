@@ -18,11 +18,11 @@ _attack: int = 1, _defense: int = 0).(_name, _type, _icon, _description, _rarity
 	attack = _attack
 	defense = _defense
 	
-func getStats() -> String:
+func get_stats() -> String:
 	var c = ", "
 	var e = " = "
 	
-	var stats = .getStats()
+	var stats = .get_stats()
 	
 	stats.erase(stats.length() - 1, 1)
 	
