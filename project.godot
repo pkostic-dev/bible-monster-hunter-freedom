@@ -45,8 +45,12 @@ _global_script_class_icons={
 [application]
 
 config/name="Monster Hunter Freedom Bible"
-run/main_scene="res://Test.tscn"
+run/main_scene="res://scene/Main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Utility="*res://script/singleton/utility.gd"
 
 [importer_defaults]
 
