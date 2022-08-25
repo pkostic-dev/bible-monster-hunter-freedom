@@ -1,6 +1,6 @@
 Item
-	type : int
 	name : string
+	type : int
 	icon : string
 	description : string
 	rarity : int
