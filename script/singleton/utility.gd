@@ -6,7 +6,7 @@ var current_scene = null
 func _ready():
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
-	print(current_scene)
+	print("Current scene : " + str(current_scene))
 
 
 func json_to_dict(path) -> Dictionary:
@@ -31,11 +31,23 @@ func combinable_items_from_json(path) -> Array:
 	var items_list = []
 	
 	for item in items:
-		var item_dict = data.get(type).get(item)
+		var item_dict = items.get(item)
 		var _type = Item.Type.get(type.to_upper())
 		var _name = item
 		var _icon = item_dict.get("icon")
-		var object = CombinableItem.new(_name, _type, _icon)
+		var _desc = item_dict.get("description")
+		var _rrty = item_dict.get("rarity")
+		var _capc = item_dict.get("capacity")
+		var _vlue = item_dict.get("value")
+		
+		var _succ = item_dict.get("success_rate")
+		var _minq = item_dict.get("min_quantity")
+		var _maxq = item_dict.get("max_quantity")
+		var _comb = item_dict.get("combine_recipes")
+		var _shop = item_dict.get("shops")
+		var _alch = item_dict.get("requires_alchemy")
+		
+		var object = CombinableItem.new(_name, _type, _icon, _desc, _rrty, _capc, _vlue, _succ, _minq, _maxq, _comb, _shop, _alch)
 		items_list.append(object)
 		
 	return items_list
