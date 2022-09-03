@@ -20,3 +20,27 @@ func _init(_name: String, _type: int, _icon: String = "", _description: String =
 	combine_recipes = _combine_recipes
 	shops = _shops
 	requires_alchemy = _requires_alchemy
+	
+func get_stats() -> String:
+	var c = ", "
+	var e = " = "
+	
+	var stats = "["
+	
+	stats += "name" + e + name + c
+	stats += "type" + e + Type.keys()[type] + c
+	# icon and description omitted for readability
+	#stats += "icon" + e + icon + c
+	#stats += "description" + e + description + c
+	stats += "rarity" + e + "Rare " + str(rarity) + c
+	stats += "capacity" + e + str(capacity) + c
+	stats += "value" + e + str(value) + c
+	
+	stats += "success_rate" + e + str(success_rate) + c
+	stats += "min_quantity" + e + str(min_quantity) + c
+	stats += "max_quantity" + e + str(max_quantity) + c
+	#stats += "combine_recipes" + e + str(value) + c
+	#stats += "shops" + e + str(value) + c
+	stats += "requires_alchemy" + e + str(requires_alchemy)
+	
+	return stats + "]"
