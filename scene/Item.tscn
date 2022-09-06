@@ -1,0 +1,83 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://data/icons/bug/bug_yellow.png" type="Texture" id=1]
+[ext_resource path="res://font/roboto_mono_regular_dynamicfont.tres" type="DynamicFont" id=2]
+
+[node name="Item" type="HBoxContainer"]
+margin_right = 500.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 500, 120 )
+
+[node name="Left" type="VBoxContainer" parent="."]
+margin_right = 60.0
+margin_bottom = 120.0
+
+[node name="Rarity" type="Label" parent="Left"]
+unique_name_in_owner = true
+margin_right = 60.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 2 )
+text = "Rare 1"
+align = 1
+
+[node name="Icon" type="TextureRect" parent="Left"]
+unique_name_in_owner = true
+margin_top = 26.0
+margin_right = 60.0
+margin_bottom = 76.0
+texture = ExtResource( 1 )
+stretch_mode = 4
+
+[node name="Value" type="Label" parent="Left"]
+unique_name_in_owner = true
+margin_top = 80.0
+margin_right = 60.0
+margin_bottom = 102.0
+custom_fonts/font = ExtResource( 2 )
+text = "1000z"
+align = 1
+
+[node name="VSeparator" type="VSeparator" parent="."]
+margin_left = 64.0
+margin_right = 80.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 16, 0 )
+
+[node name="Right" type="VBoxContainer" parent="."]
+margin_left = 84.0
+margin_right = 500.0
+margin_bottom = 120.0
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Right"]
+margin_right = 416.0
+margin_bottom = 22.0
+
+[node name="Name" type="Label" parent="Right/MarginContainer"]
+unique_name_in_owner = true
+margin_right = 416.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 2 )
+text = "Bug"
+
+[node name="Capacity" type="Label" parent="Right/MarginContainer"]
+unique_name_in_owner = true
+margin_right = 416.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 2 )
+text = "Capacity : 1"
+align = 2
+
+[node name="HSeparator" type="HSeparator" parent="Right"]
+margin_top = 26.0
+margin_right = 416.0
+margin_bottom = 30.0
+
+[node name="Description" type="Label" parent="Right"]
+unique_name_in_owner = true
+margin_top = 34.0
+margin_right = 416.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 2 )
+text = "A yellow bug, it is yellow and it stinks."
+autowrap = true

@@ -1,6 +1,6 @@
 extends Node
 
-var Test = preload("res://scene/Test.tscn")
+var Menu = preload("res://scene/Menu.tscn")
 
 func _ready() -> void:
-	add_child(Test.instance())
+	add_child(Menu.instance())
