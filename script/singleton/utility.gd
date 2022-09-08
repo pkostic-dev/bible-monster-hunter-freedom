@@ -1,6 +1,7 @@
 extends Node
 
 var current_scene = null
+var CombinableItem = load("res://class/combinable_item.gd")
 
 
 func _ready():
@@ -15,8 +16,8 @@ func json_to_dict(path) -> Dictionary:
 		printerr("File doesn't exist at " + path)
 		return {}
 	file.open(path, File.READ)
-	var data = parse_json(file.get_as_text())
-	if data.empty():
+	var data = JSON.parse_string(file.get_as_text())
+	if data.is_empty():
 		printerr("File is empty")
 		return {}
 	return data
@@ -74,7 +75,7 @@ func _deferred_goto_scene(path):
 	var s = ResourceLoader.load(path)
 
 	# Instance the new scene.
-	current_scene = s.instance()
+	current_scene = s.instantiate()
 
 	# Add it to the active scene, as child of root.
 	get_tree().get_root().add_child(current_scene)

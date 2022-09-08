@@ -1,104 +1,104 @@
 {
-    "Consumable" : {
-        "Potion" : {
-            "icon" : "medicine/medicine_green.webp",
-            "description": "Restores a small amount of Health.",
-            "rarity" : 1,
-            "capacity" : 10,
-            "value" : 7,
-            "success_rate" : 1,
-            "min_quantity" : 1,
-            "max_quantity" : 1,
-            "combine_recipes" : [
-                ["Herb", "Blue Mushroom"]
-            ],
-            "shops" : [
-                ["Traveling Merchant", 66],
-                ["Gathering Hub Merchant", 66]
-            ],
-            "requires_alchemy" : false
-        },
-        "Mega Potion" : {
-            "icon" : "medicine/medicine_green.webp",
-            "description": "Restores a moderate amount of Health.",
-            "rarity" : 2,
-            "capacity" : 10,
-            "value" : 83,
-            "success_rate": 1,
-            "min_quantity": 1,
-            "max_quantity": 1,
-            "combine_recipes" : [
-                ["Potion", "Honey"]
-            ],
-            "shops": [],
-            "requires_alchemy": false
-        },
-        "Nutrients" : {
-            "icon" : "medicine/medicine_light_blue.webp",
-            "description": "",
-            "rarity" : 2,
-            "capacity" : 5,
-            "value" : 76,
-            "success_rate": 1,
-            "min_quantity": 1,
-            "max_quantity": 1,
-            "combine_recipes" : [
-                ["Blue Mushroom", "Godbug"]
-            ],
-            "shops" : [
-                ["Old Lady Merchant", 760]
-            ],
-            "requires_alchemy": false
-        },
-        "Mega Nutrients" : {
-            "icon" : "medicine/medicine_light_blue.webp",
-            "description": "",
-            "rarity" : 3,
-            "capacity" : 5,
-            "value" : 460,
-            "success_rate": 1,
-            "min_quantity": 1,
-            "max_quantity": 1,
-            "combine_recipes" : [
-                ["Nutrients", "Honey"]
-            ],
-            "shops": [],
-            "requires_alchemy": false
-        },
-        "Antidote" : {
-            "icon" : "medicine/medicine_blue.webp",
-            "description": "Effectively removes all traces of poison in your system.",
-            "rarity" : 1,
-            "capacity" : 10,
-            "value" : 6,
-            "success_rate": 1,
-            "min_quantity": 1,
-            "max_quantity": 1,
-            "combine_recipes" : [
-                ["Antidote Herb", "Blue Mushroom"]
-            ],
-            "shops" : [
-                ["Old Lady Merchant", 60],
-                ["Gathering Hub Merchant", 60]
-            ],
-            "requires_alchemy": false
-        },
-        "Catalyst" : {
-            "icon" : "sac/sac_grey.webp",
-            "description": "Mixes with other materials to improve their effect. Cannot be used by itself.",
-            "rarity" : 2,
-            "capacity" : 5,
-            "value" : 48,
-            "success_rate": 1,
-            "min_quantity": 1,
-            "max_quantity": 1,
-            "combine_recipes" : [
-                ["Honey", "Bitterbug"]
-            ],
-            "shops" : [
-                ["Old Lady Merchant", 480]
-            ],
-            "requires_alchemy": false
-        }
-    }
+	"Consumable" : {
+		"Potion" : {
+			"icon" : "medicine/medicine_green.webp",
+			"description": "Restores a small amount of Health.",
+			"rarity" : 1,
+			"capacity" : 10,
+			"value" : 7,
+			"success_rate" : 1,
+			"min_quantity" : 1,
+			"max_quantity" : 1,
+			"combine_recipes" : [
+				["Herb", "Blue Mushroom"]
+			],
+			"shops" : [
+				["Traveling Merchant", 66],
+				["Gathering Hub Merchant", 66]
+			],
+			"requires_alchemy" : false
+		},
+		"Mega Potion" : {
+			"icon" : "medicine/medicine_green.webp",
+			"description": "Restores a moderate amount of Health.",
+			"rarity" : 2,
+			"capacity" : 10,
+			"value" : 83,
+			"success_rate": 1,
+			"min_quantity": 1,
+			"max_quantity": 1,
+			"combine_recipes" : [
+				["Potion", "Honey"]
+			],
+			"shops": [],
+			"requires_alchemy": false
+		},
+		"Nutrients" : {
+			"icon" : "medicine/medicine_light_blue.webp",
+			"description": "",
+			"rarity" : 2,
+			"capacity" : 5,
+			"value" : 76,
+			"success_rate": 1,
+			"min_quantity": 1,
+			"max_quantity": 1,
+			"combine_recipes" : [
+				["Blue Mushroom", "Godbug"]
+			],
+			"shops" : [
+				["Old Lady Merchant", 760]
+			],
+			"requires_alchemy": false
+		},
+		"Mega Nutrients" : {
+			"icon" : "medicine/medicine_light_blue.webp",
+			"description": "",
+			"rarity" : 3,
+			"capacity" : 5,
+			"value" : 460,
+			"success_rate": 1,
+			"min_quantity": 1,
+			"max_quantity": 1,
+			"combine_recipes" : [
+				["Nutrients", "Honey"]
+			],
+			"shops": [],
+			"requires_alchemy": false
+		},
+		"Antidote" : {
+			"icon" : "medicine/medicine_blue.webp",
+			"description": "Effectively removes all traces of poison in your system.",
+			"rarity" : 1,
+			"capacity" : 10,
+			"value" : 6,
+			"success_rate": 1,
+			"min_quantity": 1,
+			"max_quantity": 1,
+			"combine_recipes" : [
+				["Antidote Herb", "Blue Mushroom"]
+			],
+			"shops" : [
+				["Old Lady Merchant", 60],
+				["Gathering Hub Merchant", 60]
+			],
+			"requires_alchemy": false
+		},
+		"Catalyst" : {
+			"icon" : "sac/sac_grey.webp",
+			"description": "Mixes with other materials to improve their effect. Cannot be used by itself.",
+			"rarity" : 2,
+			"capacity" : 5,
+			"value" : 48,
+			"success_rate": 1,
+			"min_quantity": 1,
+			"max_quantity": 1,
+			"combine_recipes" : [
+				["Honey", "Bitterbug"]
+			],
+			"shops" : [
+				["Old Lady Merchant", 480]
+			],
+			"requires_alchemy": false
+		}
+	}
 }

@@ -6,34 +6,34 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
-_global_script_classes=[ {
+_global_script_classes=[{
 "base": "Weapon",
-"class": "BlademasterWeapon",
-"language": "GDScript",
+"class": &"BlademasterWeapon",
+"language": &"GDScript",
 "path": "res://class/blademaster_weapon.gd"
 }, {
 "base": "Item",
-"class": "CombinableItem",
-"language": "GDScript",
+"class": &"CombinableItem",
+"language": &"GDScript",
 "path": "res://class/combinable_item.gd"
 }, {
 "base": "Weapon",
-"class": "GunnerWeapon",
-"language": "GDScript",
+"class": &"GunnerWeapon",
+"language": &"GDScript",
 "path": "res://class/gunner_weapon.gd"
 }, {
-"base": "Reference",
-"class": "Item",
-"language": "GDScript",
+"base": "RefCounted",
+"class": &"Item",
+"language": &"GDScript",
 "path": "res://class/item.gd"
 }, {
 "base": "Item",
-"class": "Weapon",
-"language": "GDScript",
+"class": &"Weapon",
+"language": &"GDScript",
 "path": "res://class/weapon.gd"
-} ]
+}]
 _global_script_class_icons={
 "BlademasterWeapon": "",
 "CombinableItem": "",
@@ -46,6 +46,7 @@ _global_script_class_icons={
 
 config/name="Monster Hunter Freedom Bible"
 run/main_scene="res://scene/Main.tscn"
+config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
 
 [autoload]

@@ -7,17 +7,22 @@ Item
 	capacity : int
 	value : int
 
-CombinableItem extends Item
+****
+
+CombinableItem extends Item //change to InventoryItem and group everything here ?
 (also Buyable)
 	success_rate : float
 	min_quantity : int
 	max_quantity : int
+	// add combinable
 	combine_recipes : Array[Array[String, String] (ingredient A, ingredient B)
+	// add buyable
 	shops : Array[Array[String, int]] (shop, price)
-	requires_alchemy : boolean
+	requires_alchemy : boolean // this has to be changed
 
 CookableItem extends Item
 	cooking_method : int
+	//add cookable and cooking_method to CombinableItem ?
 
 CarvableItem extends Item
 	monsters : Array[String, ...] (monster1, monster2 etc.)
@@ -29,12 +34,14 @@ FoundItem extends Item (mining, fishing, bug catching, scavenging, supply box)
 TradeableItem extends Item
 	trades : Array[Array[String, Array[String, ...]]] (elder, items)
 
+****
+
 Weapon extends Item
 	attack : int
 	defense : int
 
 BlademasterWeapon extends Weapon
-	sharpness : int or String ?
+	sharpness : int or String ? //can probably find values in a guide for most weapons
 	attribute : int
 	upgrades : Array[string]
 
@@ -52,7 +59,7 @@ Monster
 	ailments : int or Array
 	weaknesses : Array[Array[int, int]] (element, effectiveness)
 	habitat : Array[string]
-	size : float
+	size : float //?
 	
 
 Quest
@@ -76,6 +83,7 @@ Quest
 	boulders : array[array[string, string]] (area, (to) area)
 
 Location
+	name : string
 
 Options
 	nb_books_of_combos : int (each book adds +5% to success_rate)
