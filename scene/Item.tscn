@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://crpd84binviip" path="res://data/icons/bug/bug_yellow.png" id="1"]
 
 [node name="Panel" type="Panel"]
-custom_minimum_size = Vector2(360, 128)
+custom_minimum_size = Vector2i(360, 128)
 anchors_preset = -1
 anchor_right = 0.3125
 anchor_bottom = 0.197531
@@ -27,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Left" type="VBoxContainer" parent="MarginContainer/Item"]
-custom_minimum_size = Vector2(100, 110)
+custom_minimum_size = Vector2i(100, 110)
 offset_right = 100.0
 offset_bottom = 112.0
 alignment = 1
