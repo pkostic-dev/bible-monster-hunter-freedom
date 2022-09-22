@@ -3,10 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://crpd84binviip" path="res://data/icons/bug/bug_yellow.png" id="1"]
 
 [node name="Panel" type="Panel"]
-custom_minimum_size = Vector2i(360, 128)
+custom_minimum_size = Vector2i(448, 192)
 anchors_preset = -1
-anchor_right = 0.3125
-anchor_bottom = 0.197531
+anchor_right = 0.389
+anchor_bottom = 0.296654
+offset_right = -0.128021
+offset_bottom = -0.23201
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
@@ -18,72 +20,93 @@ anchor_top = 0.0625
 anchor_right = 0.977778
 anchor_bottom = 0.9375
 metadata/_edit_use_anchors_ = true
-metadata/_edit_group_ = true
 
 [node name="Item" type="HBoxContainer" parent="MarginContainer"]
-offset_right = 344.0
-offset_bottom = 112.0
+offset_right = 428.0
+offset_bottom = 168.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Left" type="VBoxContainer" parent="MarginContainer/Item"]
 custom_minimum_size = Vector2i(100, 110)
 offset_right = 100.0
-offset_bottom = 112.0
+offset_bottom = 168.0
 alignment = 1
 
 [node name="Rarity" type="Label" parent="MarginContainer/Item/Left"]
 unique_name_in_owner = true
-offset_top = 1.0
+offset_top = 29.0
 offset_right = 100.0
-offset_bottom = 27.0
+offset_bottom = 55.0
 text = "Rare 1"
 horizontal_alignment = 1
 
 [node name="Icon" type="TextureRect" parent="MarginContainer/Item/Left"]
 unique_name_in_owner = true
-offset_top = 31.0
+offset_top = 59.0
 offset_right = 100.0
-offset_bottom = 81.0
+offset_bottom = 109.0
 texture = ExtResource("1")
 stretch_mode = 3
 
 [node name="Value" type="Label" parent="MarginContainer/Item/Left"]
 unique_name_in_owner = true
-offset_top = 85.0
+offset_top = 113.0
 offset_right = 100.0
-offset_bottom = 111.0
+offset_bottom = 139.0
 text = "1000z"
 horizontal_alignment = 1
 
 [node name="Right" type="VBoxContainer" parent="MarginContainer/Item"]
 offset_left = 104.0
-offset_right = 344.0
-offset_bottom = 112.0
+offset_right = 428.0
+offset_bottom = 168.0
 size_flags_horizontal = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Item/Right"]
-offset_right = 240.0
+offset_right = 324.0
 offset_bottom = 26.0
 
 [node name="Name" type="Label" parent="MarginContainer/Item/Right/MarginContainer"]
 unique_name_in_owner = true
-offset_right = 240.0
+offset_right = 324.0
 offset_bottom = 26.0
 text = "Yellow Bug"
 
 [node name="Capacity" type="Label" parent="MarginContainer/Item/Right/MarginContainer"]
 unique_name_in_owner = true
-offset_right = 240.0
+offset_right = 324.0
 offset_bottom = 26.0
 text = "Capacity : 1"
 horizontal_alignment = 2
 
 [node name="Description" type="Label" parent="MarginContainer/Item/Right"]
 unique_name_in_owner = true
-offset_top = 45.0
-offset_right = 240.0
-offset_bottom = 97.0
-size_flags_vertical = 6
+offset_top = 30.0
+offset_right = 324.0
+offset_bottom = 56.0
+size_flags_vertical = 2
 text = "A yellow bug, it is yellow and it stinks."
 autowrap_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="MarginContainer/Item/Right"]
+offset_top = 137.0
+offset_right = 324.0
+offset_bottom = 168.0
+
+[node name="Recipes" type="Button" parent="MarginContainer/Item/Right/Buttons"]
+unique_name_in_owner = true
+offset_right = 160.0
+offset_bottom = 31.0
+size_flags_horizontal = 3
+disabled = true
+text = "Recipes"
+
+[node name="Shops" type="Button" parent="MarginContainer/Item/Right/Buttons"]
+unique_name_in_owner = true
+offset_left = 164.0
+offset_right = 324.0
+offset_bottom = 31.0
+size_flags_horizontal = 3
+disabled = true
+text = "Shops"
