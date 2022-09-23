@@ -1,0 +1,143 @@
+Attack, 25, Attack UP <Large>, H52/G48/L23/S14/D14/B12
+Attack, 15, Attack UP <Med>, H26/G24/L11/S7/D7/B6
+Attack, 10, Attack UP <Sm>, H15/G14/L6/S4/D4/B3
+Defense, 15, Defense +15, Def+15
+Defense, 10, Defense +10, Def+10
+Defense, -10, Defense -10, Def-10
+Defense, -15, Defense -15, Def-15
+Strength, 25, Strength+30, Health+30
+Strength, 15, Strength+20, Health+20
+Strength, 10, Strength+10, Health+10
+Strength, -10, Strength-10, Health-10
+Strength, -15, Strength-20, Health-20
+Hunger, 15, Hunger Negated, Stamina bar never decreases
+Hunger, 10, Hunger[0.5x], Stamina Bar lowers  .5x slower
+Hunger, -10, Hunger[1.5x], Bar decreases 1.5x faster
+Hunger, -20, Hunger[2.0x], Bar decreases 2x faster
+Cold res, 15, Anti-cold, No stamina decrease in cold
+Cold res, 10, Cold [0.5x], Stamina decrease .5x in cold
+Cold res, -10, Cold [1.5x], Stamina decrease 1.5x in cold
+Cold res, -15, Cold [2.0x], Stamina decrease 2.0x in cold
+Heat res, 15, Anti-Heat, HP decrease negated in Heat
+Heat res, 10, Heat [0.5x], HP decrease .5x in heat
+Heat res, -10, Heat [1.5x], HP decrease 1.5x in heat
+Heat res, -15, Heat [2.0x], HP decrease 2.0x in heat
+Gluttony, 25, Spd Eater, Eat fast like a god!
+Gluttony, 15, Eating+2, Eating foods adds +50 more stam
+Gluttony, 10, Eating+1, Eating foods adds +25 more stam
+Throw, 10, Throw+1, Distance and dmg of throwing items+
+Backpacking, 10, Backpack Expert, Run faster with eggs/stone
+BombStrUp, 10, Bomber, Bomb damage increased
+Artisan, 10, Sharpness+1, Visible added sharpness to weap
+Sharpness, 10, Sharp Swrd, Sharpness lasts longer
+Sharpness, -10, Blunt Swrd, Sharpness lasts shorter
+Fencing, 10, ESP, Don't bounce off wyverns
+SwrdShrpner, 10, Fast-Grinding, Whetstone takes 1sec to use
+SwrdShrpner, -10, SharpeningSkl .5, Whetstone effectiveness .5x
+Auto-Guard, 10, Auto-guard, Auto-Guards for you
+Guard+, 15, Guard +2, Able to block all attacks
+Guard+, 10, Guard +1, No-Push back from strng attacks
+Guard+, -10, Guard -1, Take more dmg while block
+Guard+, -15, Guard -2, Take more dmg while block
+X ShotUp, 10, X ShotUp, X Shot dmg is increase 1.1x
+X ShotAdd, 15, X ShotAdd, Able to carry lvl2+3
+X ShotAdd, 10, X ShotAdd, Able to carry lvl 1
+Load, 25, Loading speed +3, Loading time is shortened
+Load, 15, Loading speed +2, Loading time is shortened
+Load, 10, Loading speed +1, Loading time is shortened
+Load, -10, Loading speed -1, Loading time is lengthened
+Load, -15, Loading speed -2, Loading time is lengthened
+Load, -25, Loading speed -3, Loading time is lengthened
+Running fire, 10, Running fire, You can run and shoot =)
+Map, 10, Farsight, Auto-displays the map
+Map, -10, Map-invalid, Map will never be displayed
+Fishing, 10, Fishing expert, More time to catch a fish
+Fate, 15, Luck Booster, Best chance of better rewards
+Fate, 10, Good luck, Good chance of better rewards
+Fate, -10, Bad Luck, Bad Chance of better rewards
+Fate, -15, Calamity, Worst chance of better rewards
+PsychicVis, 15, Autotracker, Monster is always seen on map
+PsychicVis, 10, Detect, wyvern detailed when painted
+Worry, 10, Stealth, Wyverns ignore you
+Worry, -10, Provocation, Wyverns attracted to you
+WindPress, 15, Wind pressure[Lrg], Immune to all wind
+WindPress, 10, Wind pressure[Sm], Immune to sm wyvern wind
+HearProtect, 15, High-Grade earplug, Immune to all roars
+HearProtect, 10, Earplug, Immune to small wyvern roars
+Whim, 15, Divine Whim, Chance of nets/axes break-lower
+Whim, 10, Spirits Whim, Chance of nets/axes break-low
+Whim, -10, Spectres Whim, Chance of nets/axes break-high
+Whim, -15, Devils whim, Chance of nets/axes break-highest
+FireRes, 25, Fire resist +10, Fire resist +10
+FireRes, 15, Fire resist +5, Fire resist +5
+FireRes, 10, Fire resist +3, Fire resist +3
+FireRes, -10, Fire resist -3, Fire resist -3
+FireRes, -15, Fire resist -5, Fire resist -5
+FireRes, -25, Fire resist -10, Fire resist -10
+ThunderRes, 25, Thndr resist +10, Thndr resist +10
+ThunderRes, 15, Thndr resist +5, Thndr resist +5
+ThunderRes, 10, Thndr resist +3, Thndr resist +3
+ThunderRes, -10, Thndr resist -3, Thndr resist -3
+ThunderRes, -15, Thndr resist -5, Thndr resist -5
+ThunderRes, -25, Thndr resist -10, Thndr resist -10
+WaterRes, 25, Water resist +10, Water resist +10
+WaterRes, 15, Water resist +5, Water resist +5
+WaterRes, 10, Water resist +3, Water resist +3
+WaterRes, -10, Water resist -3, Water resist -3
+WaterRes, -15, Water resist -5, Water resist -5
+WaterRes, -25, Water resist -10, Water resist -10
+DragonRes, 25, Dragon Resist +10, Dragon Resist +10
+DragonRes, 15, Dragon Resist +5, Dragon Resist +5
+DragonRes, 10, Dragon Resist +3, Dragon Resist +3
+DragonRes, -10, Dragon Resist -3, Dragon Resist -3
+DragonRes, -15, Dragon Resist -5, Dragon Resist -5
+DragonRes, -25, Dragon Resist -10, Dragon Resist -10
+All res UP, 25, All resists +10, All resists +10
+All res UP, 15, All resists +5, All resists +5
+All res UP, 10, All resists +3, All resists +3
+All res UP, -10, All resists -3, All resists -3
+All res UP, -15, All resists -5, All resists -5
+All res UP, -25, All resists -10, All resists -10
+Protection, 10, Divine Protection, 25% chance of 30% less dmg
+Protection, -10, Demonic Protection, 25% chance of 30% more dmg
+Spc Attack, 10, Ab.StatusAtkUp, Status elements up 1.125x
+Faint, 15, K.O. Negated, Immune to K.O. Status
+Faint, 10, K.O. x.5, 50% chance of evading KO
+Faint, -10, K.O. x2, K.O. Duration x2
+Paralysis, 15, Stun Negated, Immune to stun
+Paralysis, 10, Stun [0.5x], Stun duration .5x
+Paralysis, -10, Stun [2.0x], Stun duration x2
+Poison, 15, Poison Negated, Immune to poison
+Poison, 10, Poison [0.5x], Poison time x.5
+Poison, -10, Poison [2.0x], Poison time x2
+Poison, -15, Poison [3.0x], Poison time x3
+Poison, -25, Poison [4.0x], Poison time x4
+Sleep, 15, Sleep invalid, Immune to sleep
+Sleep, 10, Sleep [0.5x], Sleep duration halved
+Sleep, -10, Sleep [2.0x], Sleep Duration Doubled
+Gathering, 15, Gathering +2, Best chance of more gathering
+Gathering, 10, Gathering +1, Good chance of more gathering
+Gathering, -10, Gathering -1, Good chance of less gathering
+Gathering, -15, Gathering -2, Best chance of less gathering
+HighspdGathr, 10, HiSpdGathering, Carving/Gather speed increase
+Wide-rec, 15, WideAreaRecover, Heals teamates nearby
+Wide-rec, 10, HerbalMedWide, Heals teamates nearby
+StealNoEff, 10, Anti-Theft, Cats unable to steal items
+Recovery, 10, RecItemsInc, 1.25x heal efficiency
+Recovery, -10, RecItemsWeak, 0.75x heal efficiency
+Rec Speed, 25, recovery speed +2, 4x faster red hp recovery
+Rec Speed, 10, recovery speed +1, 3x faster red hp recovery
+Rec Speed, -10, recovery speed -1, 3x slower red hp recovery
+Rec Speed, -25, recovery speed -2, 4x slower red hp recovery
+Wide-Cntr, 10, WideAreaAntidote, Antidote heals teamates
+WideEffect, 10, WideAreapwr, Power/armor seed/drug area effect
+Flute, 10, Flute Expert, Flutes break less often
+Alchemy, 10, Alchemy, New combos available
+MixSucRate, 25, Combine success +20, Combine rate +20%
+MixSucRate, 15, Combine success +10%, Combine rate +10%
+MixSucRate, 10, Combine success +5%, Combine rate +5%
+MixSucRate, -10, Combine success -5%, Combine rate -5%
+MixSucRate, -15, Combine success -10%, Combine rate -10%
+MixSucRate, -25, Combine success -20%, Combine rate -20%
+ShotMix, 10, Bullet limit, Make max of ammo when combining
+RapidFire, 10, RapidFire, Never reload until next amm
