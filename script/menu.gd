@@ -1,7 +1,7 @@
 extends Control
 
 var ItemsList = preload("res://scene/ItemsList.tscn")
-var Item = preload("res://scene/Item.tscn")
+var Item = preload("res://scene/ItemSmall.tscn")
 @onready var tab_container = $TabContainer
 
 func _ready() -> void:
@@ -18,9 +18,5 @@ func _ready() -> void:
 		_item.get_node("%Icon").texture = load("res://data/icons/" + i.icon)
 		_item.get_node("%Rarity").text = "Rare " + str(i.rarity)
 		_item.get_node("%Value").text = str(i.value) + "z"
-		if i.combine_recipes:
-			_item.get_node("%Recipes").disabled = false
-		if i.shops:
-			_item.get_node("%Shops").disabled = false
 	
 		items_list.get_node("ScrollContainer/VBoxContainer").add_child(_item)
