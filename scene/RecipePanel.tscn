@@ -1,0 +1,206 @@
+[gd_scene load_steps=3 format=3 uid="uid://dab8mwl04olj"]
+
+[ext_resource type="Texture2D" uid="uid://bsnd60535pts0" path="res://data/icons/bait/bait_yellow.png" id="1_lbpga"]
+[ext_resource type="Texture2D" uid="uid://bdkhrwi8r0mtj" path="res://data/icons/ball/ball_yellow.png" id="2_2xnvb"]
+
+[node name="RecipePanel" type="Panel"]
+custom_minimum_size = Vector2i(448, 192)
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 2.00029
+anchor_bottom = 1.00121
+offset_right = -0.128021
+offset_bottom = -0.23201
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+metadata/_edit_group_ = true
+
+[node name="RecipeContainer" type="MarginContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.0222222
+anchor_top = 0.0625
+anchor_right = 0.977778
+anchor_bottom = 0.9375
+metadata/_edit_use_anchors_ = true
+
+[node name="Recipes" type="VBoxContainer" parent="RecipeContainer"]
+offset_right = 428.0
+offset_bottom = 168.0
+
+[node name="Recipe1" type="HBoxContainer" parent="RecipeContainer/Recipes"]
+offset_right = 428.0
+offset_bottom = 80.0
+
+[node name="MaterialA" type="VBoxContainer" parent="RecipeContainer/Recipes/Recipe1"]
+offset_right = 96.0
+offset_bottom = 80.0
+size_flags_horizontal = 3
+
+[node name="MaterialAName" type="Label" parent="RecipeContainer/Recipes/Recipe1/MaterialA"]
+offset_right = 96.0
+offset_bottom = 26.0
+text = "Material A"
+horizontal_alignment = 1
+
+[node name="MaterialAIcon" type="TextureRect" parent="RecipeContainer/Recipes/Recipe1/MaterialA"]
+offset_top = 30.0
+offset_right = 96.0
+offset_bottom = 80.0
+texture = ExtResource("1_lbpga")
+stretch_mode = 3
+
+[node name="Plus" type="Label" parent="RecipeContainer/Recipes/Recipe1"]
+offset_left = 100.0
+offset_right = 127.0
+offset_bottom = 80.0
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 48
+text = "+"
+vertical_alignment = 1
+
+[node name="MaterialB" type="VBoxContainer" parent="RecipeContainer/Recipes/Recipe1"]
+offset_left = 131.0
+offset_right = 227.0
+offset_bottom = 80.0
+size_flags_horizontal = 3
+
+[node name="MaterialBName" type="Label" parent="RecipeContainer/Recipes/Recipe1/MaterialB"]
+offset_right = 96.0
+offset_bottom = 26.0
+text = "Material B"
+horizontal_alignment = 1
+
+[node name="MaterialBIcon" type="TextureRect" parent="RecipeContainer/Recipes/Recipe1/MaterialB"]
+offset_top = 30.0
+offset_right = 96.0
+offset_bottom = 80.0
+texture = ExtResource("2_2xnvb")
+stretch_mode = 3
+
+[node name="Success" type="VBoxContainer" parent="RecipeContainer/Recipes/Recipe1"]
+offset_left = 231.0
+offset_right = 327.0
+offset_bottom = 80.0
+size_flags_horizontal = 3
+
+[node name="SuccessLabel" type="Label" parent="RecipeContainer/Recipes/Recipe1/Success"]
+offset_right = 96.0
+offset_bottom = 26.0
+text = "Success"
+horizontal_alignment = 1
+
+[node name="SuccessPercentage" type="Label" parent="RecipeContainer/Recipes/Recipe1/Success"]
+offset_top = 30.0
+offset_right = 96.0
+offset_bottom = 56.0
+text = "90%"
+horizontal_alignment = 1
+
+[node name="Quantity" type="VBoxContainer" parent="RecipeContainer/Recipes/Recipe1"]
+offset_left = 331.0
+offset_right = 428.0
+offset_bottom = 80.0
+size_flags_horizontal = 3
+
+[node name="QuantityLabel" type="Label" parent="RecipeContainer/Recipes/Recipe1/Quantity"]
+offset_right = 97.0
+offset_bottom = 26.0
+text = "Quantity"
+horizontal_alignment = 1
+
+[node name="QuantityRange" type="Label" parent="RecipeContainer/Recipes/Recipe1/Quantity"]
+offset_top = 30.0
+offset_right = 97.0
+offset_bottom = 56.0
+text = "1-2"
+horizontal_alignment = 1
+
+[node name="Recipe2" type="HBoxContainer" parent="RecipeContainer/Recipes"]
+offset_top = 84.0
+offset_right = 428.0
+offset_bottom = 164.0
+
+[node name="MaterialA" type="VBoxContainer" parent="RecipeContainer/Recipes/Recipe2"]
+offset_right = 96.0
+offset_bottom = 80.0
+size_flags_horizontal = 3
+
+[node name="MaterialAName" type="Label" parent="RecipeContainer/Recipes/Recipe2/MaterialA"]
+offset_right = 96.0
+offset_bottom = 26.0
+text = "Material A"
+horizontal_alignment = 1
+
+[node name="MaterialAIcon" type="TextureRect" parent="RecipeContainer/Recipes/Recipe2/MaterialA"]
+offset_top = 30.0
+offset_right = 96.0
+offset_bottom = 80.0
+texture = ExtResource("1_lbpga")
+stretch_mode = 3
+
+[node name="Plus" type="Label" parent="RecipeContainer/Recipes/Recipe2"]
+offset_left = 100.0
+offset_right = 127.0
+offset_bottom = 80.0
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 48
+text = "+"
+vertical_alignment = 1
+
+[node name="MaterialB" type="VBoxContainer" parent="RecipeContainer/Recipes/Recipe2"]
+offset_left = 131.0
+offset_right = 227.0
+offset_bottom = 80.0
+size_flags_horizontal = 3
+
+[node name="MaterialBName" type="Label" parent="RecipeContainer/Recipes/Recipe2/MaterialB"]
+offset_right = 96.0
+offset_bottom = 26.0
+text = "Material B"
+horizontal_alignment = 1
+
+[node name="MaterialBIcon" type="TextureRect" parent="RecipeContainer/Recipes/Recipe2/MaterialB"]
+offset_top = 30.0
+offset_right = 96.0
+offset_bottom = 80.0
+texture = ExtResource("2_2xnvb")
+stretch_mode = 3
+
+[node name="Success" type="VBoxContainer" parent="RecipeContainer/Recipes/Recipe2"]
+offset_left = 231.0
+offset_right = 327.0
+offset_bottom = 80.0
+size_flags_horizontal = 3
+
+[node name="SuccessLabel" type="Label" parent="RecipeContainer/Recipes/Recipe2/Success"]
+offset_right = 96.0
+offset_bottom = 26.0
+text = "Success"
+horizontal_alignment = 1
+
+[node name="SuccessPercentage" type="Label" parent="RecipeContainer/Recipes/Recipe2/Success"]
+offset_top = 30.0
+offset_right = 96.0
+offset_bottom = 56.0
+text = "90%"
+horizontal_alignment = 1
+
+[node name="Quantity" type="VBoxContainer" parent="RecipeContainer/Recipes/Recipe2"]
+offset_left = 331.0
+offset_right = 428.0
+offset_bottom = 80.0
+size_flags_horizontal = 3
+
+[node name="QuantityLabel" type="Label" parent="RecipeContainer/Recipes/Recipe2/Quantity"]
+offset_right = 97.0
+offset_bottom = 26.0
+text = "Quantity"
+horizontal_alignment = 1
+
+[node name="QuantityRange" type="Label" parent="RecipeContainer/Recipes/Recipe2/Quantity"]
+offset_top = 30.0
+offset_right = 97.0
+offset_bottom = 56.0
+text = "1-2"
+horizontal_alignment = 1
