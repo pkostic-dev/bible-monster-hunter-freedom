@@ -10,7 +10,7 @@
 			"min_quantity" : 1,
 			"max_quantity" : 1,
 			"combine_recipes" : [
-				["Herb", "Blue Mushroom"]
+				[1, "Herb", "Blue Mushroom"]
 			],
 			"shops" : [
 				["Traveling Merchant", 66],
@@ -28,7 +28,7 @@
 			"min_quantity": 1,
 			"max_quantity": 1,
 			"combine_recipes" : [
-				["Potion", "Honey"]
+				[2, "Potion", "Honey"]
 			],
 			"shops": [],
 			"requires_alchemy": false
@@ -43,7 +43,7 @@
 			"min_quantity": 1,
 			"max_quantity": 1,
 			"combine_recipes" : [
-				["Blue Mushroom", "Godbug"]
+				[3, "Blue Mushroom", "Godbug"]
 			],
 			"shops" : [
 				["Old Lady Merchant", 760]
@@ -60,7 +60,7 @@
 			"min_quantity": 1,
 			"max_quantity": 1,
 			"combine_recipes" : [
-				["Nutrients", "Honey"]
+				[4, "Nutrients", "Honey"]
 			],
 			"shops": [],
 			"requires_alchemy": false
@@ -75,7 +75,7 @@
 			"min_quantity": 1,
 			"max_quantity": 1,
 			"combine_recipes" : [
-				["Antidote Herb", "Blue Mushroom"]
+				[5, "Antidote Herb", "Blue Mushroom"]
 			],
 			"shops" : [
 				["Old Lady Merchant", 60],
@@ -93,12 +93,27 @@
 			"min_quantity": 1,
 			"max_quantity": 1,
 			"combine_recipes" : [
-				["Honey", "Bitterbug"]
+				[9, "Honey", "Bitterbug"]
 			],
 			"shops" : [
 				["Old Lady Merchant", 480]
 			],
 			"requires_alchemy": false
+		},
+		"Honey" : {
+			"icon" : "webbing/webbing_orange.png",
+			"description": "alchemy test",
+			"rarity" : 0,
+			"capacity" : 0,
+			"value" : 0,
+			"success_rate": 0.9,
+			"min_quantity": 1,
+			"max_quantity": 1,
+			"combine_recipes" : [
+				[105, "Firefly", "Special Mushroom"]
+			],
+			"shops" : [],
+			"requires_alchemy": true
 		}
 	}
 }
