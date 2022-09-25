@@ -71,6 +71,11 @@ config/icon="res://icon.png"
 
 Utility="*res://script/singleton/utility.gd"
 
+[filesystem]
+
+import/blender/enabled=false
+import/fbx/enabled=false
+
 [importer_defaults]
 
 texture={
