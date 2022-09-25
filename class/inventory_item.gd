@@ -21,7 +21,7 @@ func _init(_name: String, _type: int, _icon: String = "", _description: String =
 	min_quantity = 1
 	max_quantity = 1
 	requires_alchemy = false
-	cooking_method = Item.CookingMethod.NONE
+	cooking_method = CookingMethod.NONE
 	
 func get_stats() -> String:
 	var c = ", "
