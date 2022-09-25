@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://xmxt2uf0kxkh"]
 
-[ext_resource type="Texture2D" uid="uid://crpd84binviip" path="res://data/icons/bug/bug_yellow.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://crpd84binviip" path="res://data/icons/bug/bug_yellow.png" id="1_2540u"]
 
 [node name="ItemInterface" type="Control"]
 custom_minimum_size = Vector2i(448, 192)
@@ -62,7 +62,7 @@ layout_mode = 2
 offset_top = 59.0
 offset_right = 100.0
 offset_bottom = 109.0
-texture = ExtResource("1")
+texture = ExtResource("1_2540u")
 stretch_mode = 3
 
 [node name="Value" type="Label" parent="ItemPanel/ItemContainer/Item/Left"]

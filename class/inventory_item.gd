@@ -1,26 +1,27 @@
-class_name CombinableItem
+class_name InventoryItem
 extends Item
 
-var success_rate:float
-var min_quantity:int
-var max_quantity:int
-# Minimum and maximum quantity produced
-var combine_recipes:Array 
-# Multiple recipes possible
-# One recipe : Material A, Material B (strings)
-var shops:Array
-# Multiple shops possible
-# One shop : Shop Name, Price (string, int)
-var requires_alchemy:bool
+enum CookingMethod {NONE, BBQ, GOURMET}
 
-func _init(_name: String, _type: int, _icon: String = "", _description: String = "", _rarity: int = 1, _capacity: int = 1, _value: int = 0, _success_rate: float = 0.0, _min_quantity: int = 1, _max_quantity: int = 1, _combine_recipes: Array = [], _shops: Array = [], _requires_alchemy:bool = false) -> void:
+var success_rate:int
+var min_quantity:int # Minimum and maximum quantity produced
+var max_quantity:int
+var combine_recipes:Array[Array] # One recipe : Material A, Material B (strings)
+var shops:Array[Array] # One shop : Shop Name, Price (string, int)
+var requires_alchemy:bool
+var cooking_method:int
+var monsters:Array[String]
+var locations:Array[String]
+var quests:Array[String]
+var trades:Array[Array]
+
+func _init(_name: String, _type: int, _icon: String = "", _description: String = "", _rarity: int = 1, _capacity: int = 1, _value: int = 0) -> void:
 	super(_name, _type, _icon, _description, _rarity, _capacity, _value)
-	success_rate = _success_rate
-	min_quantity = _min_quantity
-	max_quantity = _max_quantity
-	combine_recipes = _combine_recipes
-	shops = _shops
-	requires_alchemy = _requires_alchemy
+	success_rate = 100
+	min_quantity = 1
+	max_quantity = 1
+	requires_alchemy = false
+	cooking_method = Item.CookingMethod.NONE
 	
 func get_stats() -> String:
 	var c = ", "
