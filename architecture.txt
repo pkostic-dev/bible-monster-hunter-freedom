@@ -1,3 +1,20 @@
+Main Screen
+	Weapons
+	Armors
+	Kokoto Quests
+	Guild Hall Quests
+	Locations
+	Monsters
+	Combinations
+	Items
+	Felyne Kitchen
+	Treasure Quests
+	Kokoto Farm
+	Awards
+	Blacksmith
+
+****
+
 Item
 	name : string
 	type : int
@@ -9,29 +26,19 @@ Item
 
 ****
 
-CombinableItem extends Item //change to InventoryItem and group everything here ?
-(also Buyable)
+InventoryItem  extends Item
+(also Buyable, Cookable, Carvable, Found, Quest, Tradeable)
 	success_rate : float
 	min_quantity : int
 	max_quantity : int
-	// add combinable
 	combine_recipes : Array[Array[String, String] (ingredient A, ingredient B)
-	// add buyable
 	shops : Array[Array[String, int]] (shop, price)
 	requires_alchemy : boolean // this has to be changed
-
-CookableItem extends Item
 	cooking_method : int
-	//add cookable and cooking_method to CombinableItem ?
-
-CarvableItem extends Item
 	monsters : Array[String, ...] (monster1, monster2 etc.)
-
-FoundItem extends Item (mining, fishing, bug catching, scavenging, supply box)
 	locations : Array[String, ...] (location1, location2 etc.)
-	quests (reward)
-
-TradeableItem extends Item
+	(mining, fishing, bug catching, scavenging, supply box)
+	quests : String (reward)
 	trades : Array[Array[String, Array[String, ...]]] (elder, items)
 
 ****
@@ -48,6 +55,22 @@ BlademasterWeapon extends Weapon
 GunnerWeapon extends Weapon
 	reload : int
 	recoil : int
+	
+****
+
+ArmorPiece extends Item
+	rank:int # Low, High, G-Class
+	type:int # Blademaster / Gunner
+	piece:int # Head, Body, Hands, Waist, Legs
+	skill:String
+	defense:int
+	fire:int
+	water:int
+	thunder:int
+	dragon:int
+	
+
+****
 
 Monster
 	name : String
@@ -61,6 +84,7 @@ Monster
 	habitat : Array[string]
 	size : float //?
 	
+****
 
 Quest
 	village or guild ?
@@ -82,8 +106,12 @@ Quest
 	cutscenes : array[string] (area)
 	boulders : array[array[string, string]] (area, (to) area)
 
+****
+
 Location
 	name : string
+
+****
 
 Options
 	nb_books_of_combos : int (each book adds +5% to success_rate)
