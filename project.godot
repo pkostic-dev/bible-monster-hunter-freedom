@@ -9,25 +9,40 @@
 config_version=5
 
 _global_script_classes=[{
+"base": "Item",
+"class": &"ArmorPiece",
+"language": &"GDScript",
+"path": "res://class/armor_piece.gd"
+}, {
 "base": "Weapon",
 "class": &"BlademasterWeapon",
 "language": &"GDScript",
 "path": "res://class/blademaster_weapon.gd"
-}, {
-"base": "Item",
-"class": &"CombinableItem",
-"language": &"GDScript",
-"path": "res://class/combinable_item.gd"
 }, {
 "base": "Weapon",
 "class": &"GunnerWeapon",
 "language": &"GDScript",
 "path": "res://class/gunner_weapon.gd"
 }, {
+"base": "Item",
+"class": &"InventoryItem",
+"language": &"GDScript",
+"path": "res://class/inventory_item.gd"
+}, {
 "base": "RefCounted",
 "class": &"Item",
 "language": &"GDScript",
 "path": "res://class/item.gd"
+}, {
+"base": "RefCounted",
+"class": &"Monster",
+"language": &"GDScript",
+"path": "res://class/monster.gd"
+}, {
+"base": "RefCounted",
+"class": &"Quest",
+"language": &"GDScript",
+"path": "res://class/quest.gd"
 }, {
 "base": "Item",
 "class": &"Weapon",
@@ -35,10 +50,13 @@ _global_script_classes=[{
 "path": "res://class/weapon.gd"
 }]
 _global_script_class_icons={
+"ArmorPiece": "",
 "BlademasterWeapon": "",
-"CombinableItem": "",
 "GunnerWeapon": "",
+"InventoryItem": "",
 "Item": "",
+"Monster": "",
+"Quest": "",
 "Weapon": ""
 }
 
