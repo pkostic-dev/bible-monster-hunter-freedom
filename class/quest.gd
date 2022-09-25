@@ -20,3 +20,12 @@ var requestor:String
 var description:String
 var cutscenes:Array[String] # Area 
 var boulders:Array[Array] # (area, (to) area)
+
+
+func _init(_type:int, _stars:int, _number:int, _name:String) -> void:
+	type = _type
+	stars = _stars
+	number = _number
+	name = _name
+
+
