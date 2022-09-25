@@ -1,16 +1,16 @@
 extends Control
 
 var ItemsList = preload("res://scene/ItemsList.tscn")
-var Item = preload("res://scene/ItemSmall.tscn")
+var Item = preload("res://scene/InventoryItemSmall.tscn")
 @onready var tab_container = $TabContainer
 
 func _ready() -> void:
 	var items_list = ItemsList.instantiate()
 	tab_container.add_child(items_list)
 	
-	var combinable_items = Utility.combinable_items_from_json("res://data/combinable_items.json")
-	print(combinable_items)
-	for i in combinable_items:
+	var inventory_items = Utility.combinable_items_from_json("res://data/inventory_items.json")
+	print(inventory_items)
+	for i in inventory_items:
 		var _item = Item.instantiate()
 		_item.get_node("%Name").text = i.name
 		_item.get_node("%Capacity").text = "Capacity : " + str(i.capacity)

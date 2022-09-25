@@ -1,7 +1,7 @@
 extends Node
 
 var current_scene = null
-var CombinableItem = load("res://class/combinable_item.gd")
+var InventoryItem = load("res://class/inventory_item.gd")
 
 
 func _ready():
@@ -48,7 +48,7 @@ func combinable_items_from_json(path) -> Array:
 		var _shop = item_dict.get("shops")
 		var _alch = item_dict.get("requires_alchemy")
 		
-		var object = CombinableItem.new(_name, _type, _icon, _desc, _rrty, _capc, _vlue, _succ, _minq, _maxq, _comb, _shop, _alch)
+		var object = InventoryItem.new(_name, _type, _icon, _desc, _rrty, _capc, _vlue) # , _succ, _minq, _maxq, _comb, _shop, _alch
 		items_list.append(object)
 		
 	return items_list
