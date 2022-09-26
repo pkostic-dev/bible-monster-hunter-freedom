@@ -23,6 +23,7 @@ func _init(_name: String, _type: int, _icon: String = "", _description: String =
 	requires_alchemy = false
 	cooking_method = CookingMethod.NONE
 	
+	
 func get_stats() -> String:
 	var c = ", "
 	var e = " = "
