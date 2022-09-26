@@ -76,6 +76,10 @@ Utility="*res://script/singleton/utility.gd"
 import/blender/enabled=false
 import/fbx/enabled=false
 
+[gui]
+
+theme/custom_font="res://font/roboto_mono_regular_dynamicfont.tres"
+
 [importer_defaults]
 
 texture={
