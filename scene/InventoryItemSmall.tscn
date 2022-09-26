@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://xmxt2uf0kxkh"]
+[gd_scene load_steps=3 format=3 uid="uid://xmxt2uf0kxkh"]
 
-[ext_resource type="Texture2D" uid="uid://crpd84binviip" path="res://data/icons/bug/bug_yellow.png" id="1_2540u"]
+[ext_resource type="Texture2D" uid="uid://dbaap274n6ugh" path="res://data/icons/bug/bug_yellow.png" id="1_2540u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_n0dpl"]
+font_color = Color(1, 1, 1, 0.768627)
 
 [node name="ItemInterface" type="Control"]
 custom_minimum_size = Vector2i(448, 192)
@@ -13,7 +16,6 @@ grow_vertical = 2
 
 [node name="ItemPanel" type="Panel" parent="."]
 custom_minimum_size = Vector2i(448, 192)
-layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.00029
 anchor_bottom = 1.00121
@@ -25,7 +27,6 @@ metadata/_edit_use_anchors_ = true
 metadata/_edit_group_ = true
 
 [node name="ItemContainer" type="MarginContainer" parent="ItemPanel"]
-layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0222222
 anchor_top = 0.0625
@@ -34,7 +35,6 @@ anchor_bottom = 0.9375
 metadata/_edit_use_anchors_ = true
 
 [node name="Item" type="HBoxContainer" parent="ItemPanel/ItemContainer"]
-layout_mode = 2
 offset_right = 428.0
 offset_bottom = 168.0
 grow_horizontal = 2
@@ -42,14 +42,12 @@ grow_vertical = 2
 
 [node name="Left" type="VBoxContainer" parent="ItemPanel/ItemContainer/Item"]
 custom_minimum_size = Vector2i(100, 110)
-layout_mode = 2
 offset_right = 100.0
 offset_bottom = 168.0
 alignment = 1
 
 [node name="Rarity" type="Label" parent="ItemPanel/ItemContainer/Item/Left"]
 unique_name_in_owner = true
-layout_mode = 2
 offset_top = 29.0
 offset_right = 100.0
 offset_bottom = 55.0
@@ -58,7 +56,6 @@ horizontal_alignment = 1
 
 [node name="Icon" type="TextureRect" parent="ItemPanel/ItemContainer/Item/Left"]
 unique_name_in_owner = true
-layout_mode = 2
 offset_top = 59.0
 offset_right = 100.0
 offset_bottom = 109.0
@@ -67,7 +64,6 @@ stretch_mode = 3
 
 [node name="Value" type="Label" parent="ItemPanel/ItemContainer/Item/Left"]
 unique_name_in_owner = true
-layout_mode = 2
 offset_top = 113.0
 offset_right = 100.0
 offset_bottom = 139.0
@@ -75,27 +71,23 @@ text = "1000z"
 horizontal_alignment = 1
 
 [node name="Right" type="VBoxContainer" parent="ItemPanel/ItemContainer/Item"]
-layout_mode = 2
 offset_left = 104.0
 offset_right = 428.0
 offset_bottom = 168.0
 size_flags_horizontal = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="ItemPanel/ItemContainer/Item/Right"]
-layout_mode = 2
 offset_right = 324.0
 offset_bottom = 26.0
 
 [node name="Name" type="Label" parent="ItemPanel/ItemContainer/Item/Right/MarginContainer"]
 unique_name_in_owner = true
-layout_mode = 2
 offset_right = 324.0
 offset_bottom = 26.0
 text = "Yellow Bug"
 
 [node name="Capacity" type="Label" parent="ItemPanel/ItemContainer/Item/Right/MarginContainer"]
 unique_name_in_owner = true
-layout_mode = 2
 offset_right = 324.0
 offset_bottom = 26.0
 text = "Capacity : 1"
@@ -103,16 +95,15 @@ horizontal_alignment = 2
 
 [node name="Description" type="Label" parent="ItemPanel/ItemContainer/Item/Right"]
 unique_name_in_owner = true
-layout_mode = 2
 offset_top = 30.0
 offset_right = 324.0
 offset_bottom = 56.0
 size_flags_vertical = 2
 text = "A yellow bug, it is yellow and it stinks."
+label_settings = SubResource("LabelSettings_n0dpl")
 autowrap_mode = 2
 
 [node name="Inspect" type="Button" parent="ItemPanel/ItemContainer/Item/Right"]
-layout_mode = 2
 offset_top = 137.0
 offset_right = 324.0
 offset_bottom = 168.0
