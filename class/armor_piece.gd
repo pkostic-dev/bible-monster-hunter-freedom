@@ -15,7 +15,13 @@ var water:int
 var thunder:int
 var dragon:int
 
-func _init(_rank:int, _armor_type:int, _piece:int) -> void:
+func _init(_rank:int, _armor_type:int, _piece:int, _skills:Array, _defense:int, _fire:int, _water:int, _thunder:int, _dragon:int) -> void:
 	rank = _rank
 	armor_type = _armor_type
 	piece = _piece
+	skills = _skills
+	defense = _defense
+	fire = _fire
+	water = _water
+	thunder = _thunder
+	dragon = _dragon
