@@ -1,0 +1,53 @@
+{
+    "name" : "Barbaroi Blade",
+    "rarity": 6,
+
+    "attack" : 624,
+    "defense": 20,
+    "attribute" :  {
+        "type" : "fire",
+        "value" : 840
+    },
+
+    "sharpness" : {
+        "percentage" : 75,
+        "red" : "2/11",
+        "orange" : "1/11",
+        "yellow" : "3/11",
+        "green" : "5/11",
+        "blue" : null,
+        "white" : null
+    },
+
+    "creation_cost" : 50000,
+    "creation_materials" : {
+        "material1" : "Firecell Stone",
+        "quantity1" : 5,
+        "material2" : "Firestone",
+        "quantity2" : 10,
+        "material3" : "Platinum Ticket",
+        "quantity3" : 10
+    },
+    "creation_hr" : 4,
+
+    "upgrade_from" : "Sentinel",
+    "upgrade_from_cost" : 50000,
+    "upgrade_from_materials" : {
+        "material1": "Firecell Stone",
+        "quantity1": 2,
+        "material2": "Firestone",
+        "quantity2": 8,
+        "material3": "Platinum Ticket",
+        "quantity3": 5
+    },
+    "upgrade_from_hr" : 4,
+
+    "upgrade_to" : null,
+    "upgrade_to_cost" : null,
+    "upgrade_to_materials" : null,
+    "upgrade_to_hr" : null,
+
+    
+    "description" : "A great blade housing a raging inferno. The lightest swing ignites an epic blaze."
+
+}

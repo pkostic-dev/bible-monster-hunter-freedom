@@ -1,0 +1,33 @@
+{
+    "name" : "Iron Sword+",
+    "rarity": 1,
+
+    "attack" : 336,
+    "defense": 0,
+    "attribute" :  null,
+
+    "sharpness" : {
+        "percentage" : 50,
+        "red" : "1/3",
+        "orange" : "1/6",
+        "yellow" : "1/2",
+        "green" : null,
+        "blue" : null,
+        "white" : null
+    },
+
+    "creation_cost" : null,
+    "creation_materials" : null,
+    "creation_hr" : null,
+
+    "upgrade_from" : "Iron Sword",
+    "upgrade_cost" : 675,
+    "upgrade_materials" : {
+        "material1" : "Iron Ore",
+        "quantity1" : 2
+    },
+    "upgrade_hr" : 1,
+    
+    "description" : "The ultimate Iron Sword. Holds its Sharpness longer for extended fighting."
+
+}
