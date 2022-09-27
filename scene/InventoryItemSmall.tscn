@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://xmxt2uf0kxkh"]
 
-[ext_resource type="Texture2D" uid="uid://dbaap274n6ugh" path="res://data/icons/bug/bug_yellow.png" id="1_2540u"]
+[ext_resource type="Texture2D" uid="uid://crpd84binviip" path="res://data/icons/bug/bug_yellow.png" id="1_2540u"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_n0dpl"]
 font_color = Color(1, 1, 1, 0.768627)
