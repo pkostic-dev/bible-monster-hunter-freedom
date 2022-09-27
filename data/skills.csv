@@ -140,4 +140,4 @@ MixSucRate, -10, Combine success -5%, Combine rate -5%
 MixSucRate, -15, Combine success -10%, Combine rate -10%
 MixSucRate, -25, Combine success -20%, Combine rate -20%
 ShotMix, 10, Bullet limit, Make max of ammo when combining
-RapidFire, 10, RapidFire, Never reload until next amm
+RapidFire, 10, RapidFire, Never reload until next ammo
