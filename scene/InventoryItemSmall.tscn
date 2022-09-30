@@ -51,6 +51,7 @@ offset_bottom = 168.0
 alignment = 1
 
 [node name="Rarity" type="Label" parent="ItemPanel/ItemContainer/Item/Left"]
+unique_name_in_owner = true
 layout_mode = 2
 offset_top = 30.0
 offset_right = 100.0
