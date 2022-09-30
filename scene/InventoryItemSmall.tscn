@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://xmxt2uf0kxkh"]
 
-[ext_resource type="Texture2D" uid="uid://crpd84binviip" path="res://data/icons/bug/bug_yellow.png" id="1_2540u"]
+[ext_resource type="Texture2D" uid="uid://by355sd5blgsg" path="res://data/icons/bug/bug_yellow.png" id="1_2540u"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_n0dpl"]
 font_color = Color(1, 1, 1, 0.768627)
@@ -111,7 +111,7 @@ offset_top = 29.0
 offset_right = 324.0
 offset_bottom = 79.0
 size_flags_vertical = 2
-text = "A yellow bug, it is yellow and it stinks."
+text = "A yellow bug, it is yellow and it stinks like poopoo."
 label_settings = SubResource("LabelSettings_n0dpl")
 autowrap_mode = 2
 
