@@ -1,6 +1,6 @@
 extends Node
 
-var current_scene = null
+var current_scene:Node = null
 var InventoryItem = load("res://class/inventory_item.gd")
 
 
@@ -11,11 +11,10 @@ func _ready():
 
 
 func json_to_dict(path) -> Dictionary:
-	var file = File.new()
-	if not file.file_exists(path):
+	if not FileAccess.file_exists(path):
 		printerr("File doesn't exist at " + path)
 		return {}
-	file.open(path, File.READ)
+	var file = FileAccess.open(path, FileAccess.READ)
 	var data = JSON.parse_string(file.get_as_text())
 	if data.is_empty():
 		printerr("File is empty")
@@ -95,6 +94,10 @@ func goto_scene(path):
 
 
 func _deferred_goto_scene(path):
+	# Check if scene exists
+	if not FileAccess.file_exists(path):
+		return
+	
 	# It is now safe to remove the current scene
 	current_scene.free()
 
@@ -109,3 +112,4 @@ func _deferred_goto_scene(path):
 
 	# Optionally, to make it compatible with the SceneTree.change_scene() API.
 	get_tree().set_current_scene(current_scene)
+
