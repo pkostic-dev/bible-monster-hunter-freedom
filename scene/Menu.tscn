@@ -12,6 +12,7 @@ grow_vertical = 2
 script = ExtResource("1")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -20,6 +21,7 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 custom_minimum_size = Vector2i(1000, 500)
+layout_mode = 2
 offset_left = 76.0
 offset_top = 74.0
 offset_right = 1076.0
@@ -27,12 +29,14 @@ offset_bottom = 574.0
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
 offset_top = 169.0
 offset_right = 1000.0
 offset_bottom = 220.0
 alignment = 1
 
 [node name="Weapons" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
 offset_right = 330.0
 offset_bottom = 51.0
 size_flags_horizontal = 3
@@ -40,6 +44,7 @@ theme_override_font_sizes/font_size = 32
 text = "Weapons"
 
 [node name="Armors" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
 offset_left = 334.0
 offset_right = 665.0
 offset_bottom = 51.0
@@ -48,6 +53,7 @@ theme_override_font_sizes/font_size = 32
 text = "Armors"
 
 [node name="Items" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
 offset_left = 669.0
 offset_right = 1000.0
 offset_bottom = 51.0
@@ -56,12 +62,14 @@ theme_override_font_sizes/font_size = 32
 text = "Items"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
 offset_top = 224.0
 offset_right = 1000.0
 offset_bottom = 275.0
 alignment = 1
 
 [node name="Monsters" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
 offset_right = 330.0
 offset_bottom = 51.0
 size_flags_horizontal = 3
@@ -69,6 +77,7 @@ theme_override_font_sizes/font_size = 32
 text = "Monsters"
 
 [node name="Quests" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
 offset_left = 334.0
 offset_right = 665.0
 offset_bottom = 51.0
@@ -77,6 +86,7 @@ theme_override_font_sizes/font_size = 32
 text = "Quests"
 
 [node name="Combinations" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
 offset_left = 669.0
 offset_right = 1000.0
 offset_bottom = 51.0
@@ -85,12 +95,14 @@ theme_override_font_sizes/font_size = 32
 text = "Combinations"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
 offset_top = 279.0
 offset_right = 1000.0
 offset_bottom = 330.0
 alignment = 1
 
 [node name="Locations" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
 offset_right = 330.0
 offset_bottom = 51.0
 size_flags_horizontal = 3
@@ -98,6 +110,7 @@ theme_override_font_sizes/font_size = 32
 text = "Locations"
 
 [node name="Farm" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
 offset_left = 334.0
 offset_right = 665.0
 offset_bottom = 51.0
@@ -106,9 +119,20 @@ theme_override_font_sizes/font_size = 32
 text = "Farm"
 
 [node name="Kitchen" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
 offset_left = 669.0
 offset_right = 1000.0
 offset_bottom = 51.0
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 32
 text = "Kitchen"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/Weapons" to="." method="_on_weapons_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/Armors" to="." method="_on_armors_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/Items" to="." method="_on_items_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/Monsters" to="." method="_on_monsters_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/Quests" to="." method="_on_quests_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer2/Combinations" to="." method="_on_combinations_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer3/Locations" to="." method="_on_locations_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer3/Farm" to="." method="_on_farm_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer3/Kitchen" to="." method="_on_kitchen_pressed"]
