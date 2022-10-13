@@ -71,6 +71,7 @@ config/icon="res://icon.png"
 
 Utility="*res://script/singleton/utility.gd"
 Scenes="*res://script/singleton/scenes.gd"
+Colors="*res://script/singleton/colors.gd"
 
 [filesystem]
 
