@@ -1,15 +1,15 @@
 extends Node
 
-var MenuScene := "res://scene/Menu.tscn"
+var Menu := "res://scene/Menu.tscn"
 
-var WeaponsScene := "res://scene/Weapons.tscn"
-var ItemsScene := "res://scene/Items.tscn"
-var ArmorsScene := "res://scene/Armor.tscn"
+var Weapons := "res://scene/Weapons.tscn"
+var Items := "res://scene/Items.tscn"
+var Armors := "res://scene/Armor.tscn"
 
-var MonstersScene := "res://scene/Monsters.tscn"
-var QuestsScene := "res://scene/Quests.tscn"
-var CombinationsScene := "res://scene/Combinations.tscn"
+var Monsters := "res://scene/Monsters.tscn"
+var Quests := "res://scene/Quests.tscn"
+var Combinations := "res://scene/Combinations.tscn"
 
-var LocationsScene := "res://scene/Locations.tscn"
-var FarmScene := "res://scene/Farm.tscn"
-var KitchenScene := "res://scene/Kitchen.tscn"
+var Locations := "res://scene/Locations.tscn"
+var Farm := "res://scene/Farm.tscn"
+var Kitchen := "res://scene/Kitchen.tscn"
