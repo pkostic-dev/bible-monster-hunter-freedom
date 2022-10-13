@@ -243,7 +243,6 @@ color = Color(0.898039, 0.14902, 0.172549, 1)
 
 [node name="Description" type="Label" parent="Panel/MarginContainer/HBoxContainer/Right"]
 unique_name_in_owner = true
-visible = false
 offset_top = 121.0
 offset_right = 448.0
 offset_bottom = 171.0
@@ -251,7 +250,7 @@ text = "A Great Sword for first-time hunters. Capable in combat vs. many kinds o
 autowrap_mode = 2
 
 [node name="RecipePanel" type="Panel" parent="Panel/MarginContainer/HBoxContainer/Right"]
-offset_top = 121.0
+offset_top = 187.0
 offset_right = 448.0
 offset_bottom = 254.0
 size_flags_vertical = 3
