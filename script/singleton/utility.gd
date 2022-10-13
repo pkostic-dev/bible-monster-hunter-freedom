@@ -1,7 +1,7 @@
 extends Node
 
+
 var current_scene:Node = null
-var InventoryItem = load("res://class/inventory_item.gd")
 
 
 func _ready():
@@ -52,33 +52,6 @@ func combinable_items_from_json(path) -> Array:
 		
 	return items_list
 
-func create_items_list():
-	#var items_list = ItemsList.instantiate()
-	#add_child(items_list)
-	
-	var green = Color(0.43, 0.78, 0.51)
-	var pink = Color(0.91, 0.56, 0.62)
-	
-	var inventory_items = Utility.combinable_items_from_json("res://data/inventory_items.json")
-	print(inventory_items)
-	for i in inventory_items:
-		var _item = Item.instantiate()
-		_item.get_node("%Name").text = i.name
-		_item.get_node("%Capacity").text = "Capacity : " + str(i.capacity)
-		_item.get_node("%Description").text = i.description
-		_item.get_node("%Icon").texture = load("res://data/icons/" + i.icon)
-		
-		var _item_rarity = _item.get_node("%Rarity")
-		_item_rarity.text = "Rare " + str(i.rarity)
-		match(i.rarity):
-			4:
-				_item_rarity.modulate = green
-			5:
-				_item_rarity.modulate = pink
-		
-		_item.get_node("%Value").text = str(i.value) + "z"
-	
-		#items_list.get_node("ScrollContainer/VBoxContainer").add_child(_item)
 
 func goto_scene(path):
 	# This function will usually be called from a signal callback,
