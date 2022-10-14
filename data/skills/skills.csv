@@ -5,15 +5,15 @@ Defense, 15, Defense +15, Def+15
 Defense, 10, Defense +10, Def+10
 Defense, -10, Defense -10, Def-10
 Defense, -15, Defense -15, Def-15
-Strength, 25, Strength+30, Health+30
-Strength, 15, Strength+20, Health+20
-Strength, 10, Strength+10, Health+10
-Strength, -10, Strength-10, Health-10
-Strength, -15, Strength-20, Health-20
+Strength, 25, Strength +30, Health+30
+Strength, 15, Strength +20, Health+20
+Strength, 10, Strength +10, Health+10
+Strength, -10, Strength -10, Health-10
+Strength, -15, Strength -20, Health-20
 Hunger, 15, Hunger Negated, Stamina bar never decreases
-Hunger, 10, Hunger[0.5x], Stamina Bar lowers  .5x slower
-Hunger, -10, Hunger[1.5x], Bar decreases 1.5x faster
-Hunger, -20, Hunger[2.0x], Bar decreases 2x faster
+Hunger, 10, Hunger [0.5x], Stamina Bar lowers  .5x slower
+Hunger, -10, Hunger [1.5x], Bar decreases 1.5x faster
+Hunger, -20, Hunger [2.0x], Bar decreases 2x faster
 Cold res, 15, Anti-cold, No stamina decrease in cold
 Cold res, 10, Cold [0.5x], Stamina decrease .5x in cold
 Cold res, -10, Cold [1.5x], Stamina decrease 1.5x in cold
@@ -23,12 +23,12 @@ Heat res, 10, Heat [0.5x], HP decrease .5x in heat
 Heat res, -10, Heat [1.5x], HP decrease 1.5x in heat
 Heat res, -15, Heat [2.0x], HP decrease 2.0x in heat
 Gluttony, 25, Spd Eater, Eat fast like a god!
-Gluttony, 15, Eating+2, Eating foods adds +50 more stam
-Gluttony, 10, Eating+1, Eating foods adds +25 more stam
+Gluttony, 15, Eating +2, Eating foods adds +50 more stam
+Gluttony, 10, Eating +1, Eating foods adds +25 more stam
 Throw, 10, Throw+1, Distance and dmg of throwing items+
 Backpacking, 10, Backpack Expert, Run faster with eggs/stone
 BombStrUp, 10, Bomber, Bomb damage increased
-Artisan, 10, Sharpness+1, Visible added sharpness to weap
+Artisan, 10, Sharpness +1, Visible added sharpness to weap
 Sharpness, 10, Sharp Swrd, Sharpness lasts longer
 Sharpness, -10, Blunt Swrd, Sharpness lasts shorter
 Fencing, 10, ESP, Don't bounce off wyverns
@@ -133,7 +133,7 @@ Wide-Cntr, 10, WideAreaAntidote, Antidote heals teamates
 WideEffect, 10, WideAreapwr, Power/armor seed/drug area effect
 Flute, 10, Flute Expert, Flutes break less often
 Alchemy, 10, Alchemy, New combos available
-MixSucRate, 25, Combine success +20, Combine rate +20%
+MixSucRate, 25, Combine success +20%, Combine rate +20%
 MixSucRate, 15, Combine success +10%, Combine rate +10%
 MixSucRate, 10, Combine success +5%, Combine rate +5%
 MixSucRate, -10, Combine success -5%, Combine rate -5%
