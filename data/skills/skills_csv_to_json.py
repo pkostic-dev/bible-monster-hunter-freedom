@@ -1,14 +1,8 @@
-# skill name, points req., activates, effect
-
 import csv, json
 
 file_csv = open("skills.csv")
-
 data_csv = csv.reader(file_csv)
-
 list_csv = list(data_csv)
-
-print(list_csv)
 
 def to_file_name(string):
     string = string.lower()
