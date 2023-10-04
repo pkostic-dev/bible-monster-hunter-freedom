@@ -1,8 +1,5 @@
 extends Control
 
-func _ready() -> void:
-	pass
-
 
 func _on_weapons_pressed():
 	Utility.goto_scene(Scenes.Weapons)
