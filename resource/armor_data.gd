@@ -4,7 +4,7 @@ class_name ArmorData
 enum Rank {
 	LOW,
 	HIGH,
-	G,
+	G_RANK,
 }
 
 enum ArmorType {
@@ -13,11 +13,11 @@ enum ArmorType {
 }
 
 enum Slot {
-	HEAD,
-	BODY,
-	HANDS,
+	HELMET,
+	CHESTPLATE,
+	ARMGUARDS,
 	WAIST,
-	LEGS,
+	LEGGINGS,
 }
 
 @export var rank:Rank

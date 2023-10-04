@@ -1,4 +1,4 @@
-extends Resource
+extends WeaponData
 class_name GunnerWeaponData
 
 enum Reload {

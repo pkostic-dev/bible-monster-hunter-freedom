@@ -1,6 +1,8 @@
 extends Resource
 class_name ItemData
 
+# TODO Extend into InventoryItem which extends into CarvableItem, AmmoItem, ConsumableItem etc.
+
 ## Base resource for all items, including weapons and armor.
 
 ## Contains base informations for the item. This resource also contains all information about the obtainability of the item.
@@ -19,7 +21,7 @@ enum CookingMethod {
 @export var type:ItemType
 @export var icon:Texture2D
 @export_multiline var description:String
-@export_range(1, 6) var rarity:int
+@export_range(1, 7) var rarity:int
 @export_range(1, 99) var capacity:int
 @export_range(0, 50_000) var value:int
 
@@ -33,7 +35,7 @@ enum CookingMethod {
 
 @export_subgroup("Combine")
 @export var success_rate:int
-@export var min_qunatity:int
+@export var min_quantity:int
 @export var max_quantity:int
 @export var combine_recipes:CombineData
 @export var requires_alchemy:bool

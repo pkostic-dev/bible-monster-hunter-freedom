@@ -4,9 +4,11 @@ class_name BlademasterWeaponData
 ## Resource for blademaster weapons.
 
 enum WeaponType {
-	SWORD_AND_SHIELD,
 	GREATSWORD,
+	SWORD_AND_SHIELD,
+	DUAL_BLADES,
 	HAMMER,
+	LANCE,
 }
 
 @export var weapon_type:WeaponType
