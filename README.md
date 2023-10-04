@@ -36,9 +36,9 @@ You can contribute to the completion of this app if you wish. The best way to do
 1. Download Godot Engine v4.2.dev4.official [549fcce5f].
 2. Fork this repository and open it in Godot.
 3. Add the missing data by using the custom resources :
-  a. Check if the data has already been added by somebody else in the data folder.
-  b. Create the appropriate resource using the custom resources found in the resource folder.
-  c. Fill in the information in the editor with the inspector.
-  d. Save the resource and add it to the appropriate list.
-  e. Check if the resource has been properly added by running the app.
-  f. Push request.
+    1. Check if the data has already been added by somebody else in the data folder.
+    2. Create the appropriate resource using the custom resources found in the resource folder.
+    3. Fill in the information in the editor with the inspector.
+    4. Save the resource and add it to the appropriate list.
+    5. Check if the resource has been properly added by running the app.
+    6. Push request.
