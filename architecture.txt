@@ -1,3 +1,5 @@
+####################################################### SCENES #########################################################
+
 Main Screen
 	Weapons
 	Armors
@@ -13,7 +15,134 @@ Main Screen
 	Awards
 	Blacksmith
 
-****
+###################################################### RESOURCES #######################################################
+
+AmmoData
+	ammo:   ItemData
+	level:  int (1,3)
+	amount: int (1,10)
+
+ArmorData extends ItemData
+	rank:       Rank (LOW, HIGH, G)
+	armor_type: ArmorType (BLADEMASTER, GUNNER)
+	slot:       Slot (HELMET, CHESTPLATE, ARMGUARDS, WAIST, LEGGINGS)
+	skills:     Array[SkillData]
+	defense:    int(1,1000)
+	elements:   Array[ElementData]
+
+BlademasterWeaponData extends WeaponData
+	weapon_type: WeaponType (SWORD_AND_SHIELD, GREATSWORD, HAMMER, DUAL_BLADES, LANCE)
+	sharpness:   SharpnessData
+	element:     ElementData
+	status:      StatusData
+	upgrades:    Array[UpgradeData]
+
+CombineData
+	itemA: ItemData
+	itemB: ItemData
+
+ElementalWeaknessData
+	element:       Element (NONE, FIRE, WATER, THUNDER, ICE, DRAGON)
+	effectiveness: int
+
+ElementData
+	element: Element (NONE, FIRE, WATER, THUNDER, ICE, DRAGON)
+	value:   int
+
+GunnerWeaponData extends WeaponData
+	weapon_type: WeaponType (LIGHT_BOWGUN, HEAVY_BOWGUN)
+	reload:      Reload (VERY_SLOW, SLOW, NORMAL, FAST, VERY_FAST)
+	recoil:      Recoil (LIGHT, MODERATE, ?)
+	usable_ammo: Array[AmmoData]
+
+# TODO Extend into InventoryItem which extends into CarvableItem, AmmoItem, ConsumableItem etc.
+ItemData
+	name:        String
+	type:        ItemType (INVENTORY, WEAPON, ARMOR)
+	icon:        Texture2D
+	description: String
+	rarity:      int (1, 7)
+	capacity:    int (1, 99)
+	value:       int (0, 50 000)
+
+	# Misc.
+	shops:          Array[ShopData]
+	monsters:       Array[MonsterData]
+	locations:      Array[MapData]
+	quests:         Array[QuestData]
+	trades:         Array[TradeData]
+	cooking_method: CookingMethod (UNCOOKABLE, ?)
+
+	# Combine
+	success_rate:     int
+	min_quantity:     int
+	max_quantity:     int
+	combine_recipes:  CombineData
+	requires_alchemy: bool
+
+# To be restructured : Map -> Area -> Location ?
+LocationData
+	name: String
+	type: Type (AREA, BUILDING, MINING, BUG_CATCHING, FISHING)
+
+MonsterData
+	name:               String
+	icon:               Texture2D
+	description:        String
+	size_category:      SizeCategory (SMALL, BIG)
+	monster_class:      MonsterClass (WYVERN, ?)
+	elements:           Array[ElementData]
+	ailments:           Array[StatusData]
+	elemental_weakness: Array[ElementalWeaknessData]
+	habitat:            Array[MapData]
+	size:               float
+
+NPCData
+	name:     String
+	location: LocationData
+
+QuestData
+	guild_quest:bool
+
+	stars:                    int
+	quest_type:               QuestType
+	name:                     String
+	objective:                String
+	requirements:             String
+	unstable_environment:     bool
+	location:                 MapData
+	time_limit:               int
+	contract_fee:             int
+	monsters:                 Array[MonsterData]
+
+	# Rewards
+	quest_zeni_reward:        int
+	quest_hr_points:          int
+	quest_supply_box:         Array[ItemQuantityData]
+	quest_item_rewards:       Array[ItemQuantityData]
+
+	# Addition rewards
+	additional_condition:     String
+	additional_item_rewards:  Array[ItemQuantityData]
+
+	# Flavor text
+	requestor:                String
+	description:              String
+
+	# Notes
+	cutscenes:                Array[LocationData]
+	boulders:                 Array[LocationData]
+
+
+
+
+
+
+
+
+
+######################################################## OLD ###########################################################
+
 
 Item
 	name : string
