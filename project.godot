@@ -8,63 +8,11 @@
 
 config_version=5
 
-_global_script_classes=[{
-"base": "Item",
-"class": &"ArmorPiece",
-"language": &"GDScript",
-"path": "res://class/armor_piece.gd"
-}, {
-"base": "Weapon",
-"class": &"BlademasterWeapon",
-"language": &"GDScript",
-"path": "res://class/blademaster_weapon.gd"
-}, {
-"base": "Weapon",
-"class": &"GunnerWeapon",
-"language": &"GDScript",
-"path": "res://class/gunner_weapon.gd"
-}, {
-"base": "Item",
-"class": &"InventoryItem",
-"language": &"GDScript",
-"path": "res://class/inventory_item.gd"
-}, {
-"base": "RefCounted",
-"class": &"Item",
-"language": &"GDScript",
-"path": "res://class/item.gd"
-}, {
-"base": "RefCounted",
-"class": &"Monster",
-"language": &"GDScript",
-"path": "res://class/monster.gd"
-}, {
-"base": "RefCounted",
-"class": &"Quest",
-"language": &"GDScript",
-"path": "res://class/quest.gd"
-}, {
-"base": "Item",
-"class": &"Weapon",
-"language": &"GDScript",
-"path": "res://class/weapon.gd"
-}]
-_global_script_class_icons={
-"ArmorPiece": "",
-"BlademasterWeapon": "",
-"GunnerWeapon": "",
-"InventoryItem": "",
-"Item": "",
-"Monster": "",
-"Quest": "",
-"Weapon": ""
-}
-
 [application]
 
 config/name="Monster Hunter Freedom Bible"
 run/main_scene="res://scene/Menu.tscn"
-config/features=PackedStringArray("4.0")
+config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
 
 [autoload]
@@ -99,12 +47,12 @@ texture={
 
 left={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194319,"unicode":0,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194319,"key_label":0,"unicode":0,"echo":false,"script":null)
 ]
 }
 right={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194321,"unicode":0,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194321,"key_label":0,"unicode":0,"echo":false,"script":null)
 ]
 }
 
